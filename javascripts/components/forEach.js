@@ -1,8 +1,7 @@
-import { businesses } from '../helpers/data/businessArray.js';
 
 const foreachfunction = (businesses) => {
 
-    const mybiz = $('#filterbusinesses');
+    const mybiz = $('#foreach');
     mybiz.html('<h1>Active Businesses</h1>');
 
     businesses.forEach(business => {
