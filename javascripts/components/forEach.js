@@ -4,7 +4,6 @@ const foreachfunction = (businesses) => {
 
     const mybiz = $('#foreach');
     mybiz.html('<h1>Active Businesses</h1>');
-
     businesses.forEach(business => {
         mybiz.append(`
     <h2>${business.companyName}</h2>
@@ -17,17 +16,12 @@ const foreachfunction = (businesses) => {
 }
 
 $("#companySearch").keyup(e => {
-    console.log("in here");
-    console.table(businesses);
+
     const search = e.target.value;
 
     //Filter worked better than find() on what we wanted to do, which was to search the array by criteria.
 
     const result = businesses.filter(business => business.companyName.includes(search));
-
-    console.log(result);
-
-    console.log(search);
 
     if (result) {
         const mybiz = $('#foreach');
