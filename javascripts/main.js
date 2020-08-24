@@ -10,8 +10,6 @@ const init1 = () => {
     filteroutNY(businesses);
     myPurchaseAgents(businesses);
     findFunction(businesses);
-
-
 }
 
 
