@@ -5,8 +5,13 @@ const foreachfunction = (businesses) => {
     const mybiz = $('#foreach');
     mybiz.html('<h1>Active Businesses</h1>');
     businesses.forEach(business => {
+        let totalOrders = business.orders.reduce(
+            (currentTotal, nextValue) => currentTotal += nextValue,
+            0)
         mybiz.append(`
-    <h2>${business.companyName}</h2>
+    <h2>${business.companyName}
+    ($${totalOrders.toFixed(2)})
+    </h2>
     <section>
     ${business.addressFullStreet}
     </section>
@@ -27,9 +32,13 @@ $("#companySearch").keyup(e => {
         const mybiz = $('#foreach');
         mybiz.html('<h1>Active Businesses</h1>');
         result.forEach(bus => {
+            let totalOrders = bus.orders.reduce(
+                (currentTotal, nextValue) => currentTotal += nextValue,
+                0)
             mybiz.append(`
         <h2>
         ${bus.companyName}
+        ($${totalOrders.toFixed(2)})
         </h2>
         <section>
         ${bus.addressFullStreet}
