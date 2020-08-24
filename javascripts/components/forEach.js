@@ -6,7 +6,7 @@ const foreachfunction = (businesses) => {
     const mybiz = $('#foreach');
     mybiz.html('<h1>Active Businesses</h1>');
 
-    sortByName(businesses, 'companyName').reverse().forEach(business => {
+    sortByName(businesses, 'addressStateCode').reverse().forEach(business => {
         let totalOrders = business.orders.reduce(
             (currentTotal, nextValue) => currentTotal += nextValue,
             0);
