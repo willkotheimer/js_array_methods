@@ -33,6 +33,7 @@ const myPurchaseAgents = (businesses) => {
     console.table(myPurchaseAgents);
 
     agents.append(myPurchaseAgents);
+    agents.append("<hr/>")
 }
 
 export { myPurchaseAgents }
