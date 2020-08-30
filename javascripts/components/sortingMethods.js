@@ -2,12 +2,12 @@
 
 //adapted from mdn:
 
-const sortByValue = items => {
-    // sort by value
-    items.sort(function (a, b) {
-        return a.value - b.value;
-    });
-}
+// const sortByValue = items => {
+//     // sort by value
+//     items.sort(function (a, b) {
+//         return a.value - b.value;
+//     });
+// }
 
 
 const sortByName = (items, sortwhat) => {
