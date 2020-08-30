@@ -23,7 +23,7 @@ Jquery ES6, HTML5, CSS3
 
 ![](./jqueryArraysMethods.gif)
 
-##URL
+## URL
 
 [https://jqueyarraymethods.netlify.app/](https://jqueyarraymethods.netlify.app/)
 
