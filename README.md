@@ -14,7 +14,7 @@ This was an assignment to give us the opportunity to use different array methods
 The motivation for this assignment was to learn about these methods and how to use them. Some of them are not trivial to use and required knowing how to pass data parameters to make them work in the way that was intended. This helped me to build my skill in these areas and also get me a starting place for a working prototype for uses in later projects.
 
 ## Build status
-MVP is complete. There are stretch goals in the assignment that may be added later as time allows.
+Prototype. The MVP is complete, but would still require a lot of work and styling to be production worthy There are stretch goals in the assignment that may be added later as time allows.
 
 ## Code Style
 Jquery ES6, HTML5, CSS3
